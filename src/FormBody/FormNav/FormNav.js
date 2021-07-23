@@ -1,6 +1,6 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { Card, ListItem, Button, Icon, Divider } from "react-native-elements";
+import { StyleSheet, Text, View,TouchableOpacity } from "react-native";
+import { Card, ListItem, Button, Icon, Divider, } from "react-native-elements";
 
 const FormNav = () => {
   return (
@@ -14,11 +14,34 @@ const FormNav = () => {
       </ListItem>
       <Divider />
 
-      <ListItem style={styles.nav}>
-        <ListItem.Content >
-          <ListItem.Title style={{ color: "#aaa7b5" }}>Genral</ListItem.Title>
-        </ListItem.Content>
-      </ListItem>
+      <TouchableOpacity style={styles.nav2}>
+        <Text style={{ color: "#bebbc5"}}>Genral</Text>
+      </TouchableOpacity>
+      <Divider />
+      <TouchableOpacity style={styles.nav2}>
+        <Text style={{ color: "#bebbc5" }}>Privacy</Text>
+      </TouchableOpacity>
+      <Divider />
+      <TouchableOpacity style={styles.nav}>
+        <Text style={{ color: "#6530a2", fontWeight: "bold" }}>Fatures</Text>
+      </TouchableOpacity>
+      <Divider />
+      <TouchableOpacity style={styles.nav2}>
+        <Text style={{ color: "#bebbc5"}}>Cutomization</Text>
+      </TouchableOpacity>
+      <Divider />
+      <TouchableOpacity style={styles.nav2}>
+        <Text style={{ color: "#bebbc5"}}>Integration</Text>
+      </TouchableOpacity>
+      <Divider />
+      <TouchableOpacity style={styles.nav2}>
+        <Text style={{ color: "#bebbc5"}}>Session Setting</Text>
+      </TouchableOpacity>
+      <Divider />
+      <TouchableOpacity style={styles.nav2}>
+        <Text style={{ color: "#bebbc5"}}>My Plans </Text>
+      </TouchableOpacity>
+      <Divider />
     </View>
   );
 };
@@ -39,6 +62,25 @@ const styles = StyleSheet.create({
   nav: {
     backgroundColor: "#f4f6fa",
     width: "100%",
-    margin: 0,
+    height: 40,
+    padding: 8,
+    paddingLeft: 30,
+    textAlign: "left",
+    borderLeftColor: "#6530a2",
+    borderLeftWidth: 4,
+    borderLeftStyle: "solid",
+    color: "#6530a2",
+  },
+  nav2: {
+    backgroundColor: "inherit",
+    width: "100%",
+    height: 40,
+    padding: 8,
+    paddingLeft: 30,
+    textAlign: "left",
+    // borderLeftColor: "#6530a2",
+    // borderLeftWidth: 4,
+    // borderLeftStyle: "solid",
+    // color: "#6530a2",
   },
 });
